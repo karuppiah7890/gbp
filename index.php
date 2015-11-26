@@ -5,8 +5,8 @@
 </head>
 <body>
 		<?php
-			require 'auth_core.inc.php';
 			require 'connect.inc.php';
+			require 'auth_core.inc.php';
 
 			if(loggedin()){
 
