@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
 <?php
 
 	require 'connect.inc.php';
@@ -7,7 +14,10 @@
 
 		$username = getUserFieldValue('email_id');
 		echo "Welcome ".$username;
-
+?>
+	<br/><a href="logout.php">Logout</a>	
+<?php
+	
 	}
 	else{
 
@@ -16,3 +26,6 @@
 	}
 
 ?>
+
+</body>
+</html>
