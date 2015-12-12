@@ -14,8 +14,8 @@
 
 			}else{
 
-				if(isset($_GET['m'])&&!empty($_GET['m']))
-					echo $_GET['m'].'<br/>';
+				if(!empty($_GET['m']))
+					echo htmlentities($_GET['m']).'<br/>';
 
 				require 'loginform.inc.php';
 			}
