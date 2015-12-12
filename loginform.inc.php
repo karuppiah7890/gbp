@@ -5,7 +5,7 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		$query = "SELECT `id` FROM login WHERE `email_id`='$username' AND `password`='$password'";
+		$query = "SELECT `id` FROM login WHERE `email_id`='".mysqli_escape_string($conn,$username)."' AND `password`='".mysqli_escape_string($conn,$password)."'";
 
 		if($query_run = mysqli_query($conn,$query)){
 
