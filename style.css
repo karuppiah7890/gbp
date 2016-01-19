@@ -1,0 +1,120 @@
+#header-row
+{
+	height: 7%;
+	background-color: white;
+}
+
+/*
+.container
+{
+	background-color: lightgray;
+
+}
+
+
+#center-row
+{
+	height:60%;
+
+}
+#center-column
+{
+	background-color: white;
+}*/
+
+html, body{
+    height: 100%;
+}
+.container-fluid
+{
+	background-color: white;
+
+}
+
+#center-row
+{
+	margin-top: 10%;
+
+}
+#center-column
+{
+	padding-bottom: 10%;
+	
+	background-color: white;
+}
+/*
+.container-table {
+    display: table;
+    background-color: yellow;
+}*/
+/*
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: white;
+}*/
+
+
+
+
+
+
+
+#center-carousel
+{
+	height: 400px;
+	margin-top: 5%;
+
+}
+
+#center-carousel-column
+{
+	background-color: #f2f2f2;
+	padding-top: 5%;
+	height: 100%;
+  font-size: 20px;
+}
+/*
+
+.carousel-controls{
+ position:relative; 
+  width:300px;
+  height:150px; 
+  margin:0 auto;
+}
+
+.carousel-indicators{
+   top:0px; 
+}
+*/
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+  outline: 0;
+  height: 100%;
+   color: blue;
+
+ }
+
+ .navbar
+ {
+  background-color: #e9e9e9;
+ }
+ .featurette-image
+ {
+  width:50%;
+ }
+ /*
+.carousel .carousel-control {
+  visibility: hidden;
+}
+.carousel:hover .carousel-control {
+  visibility: visible;
+  color: blue;
+}*/
+
+#main-body
+{
+  padding-top: 50px;
+}

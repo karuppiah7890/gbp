@@ -10,22 +10,13 @@
 	require 'connect.inc.php';
 	require 'auth_core.inc.php';
 
-	if(loggedin()){
+	redirect_if_not_loggedin();
 
-		$username = getUserFieldValue('email_id');
-		echo "Welcome ".$username;
-?>
-	<br/><a href="logout.php">Logout</a>	
-<?php
-	
-	}
-	else{
-
-		header('Location: index.php?m=Please Login');
-
-	}
+	$username = getUserFieldValue('email_id');
+	echo "Welcome ".$username;
 
 ?>
+	<br/><a href="logout.php">Logout</a>
 
 </body>
 </html>

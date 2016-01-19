@@ -3,11 +3,7 @@
 	require 'connect.inc.php';
 	require 'auth_core.inc.php';
 
-	if(!loggedin())
-	{
-		header('Location: index.php?m=Please Login');
-		die();
-	}
+	redirect_if_not_loggedin();
 
 	$user_id = $_SESSION['user_id'];
 ?>

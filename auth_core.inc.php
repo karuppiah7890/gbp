@@ -13,6 +13,15 @@
 			return false;
 	}
 
+	function redirect_if_not_loggedin()
+	{
+		if(!loggedin())
+		{
+			header('Location: login.php?m=Please Login');
+			die();
+		}
+	}
+
 	function getUserFieldValue($fieldname)
 	{
 		global $conn;
