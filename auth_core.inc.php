@@ -29,4 +29,31 @@
 
 	}
 
+	function isJournalist()
+	{
+		if(loggedin())
+		{
+			if(!empty($_SESSION['user_type']))
+			{
+				if($_SESSION['user_type']=='jour')
+					return true;	
+			}
+		}
+
+		return false;
+	}
+
+	function isEditor()
+	{
+		if(loggedin())
+		{
+			if(!empty($_SESSION['user_type']))
+			{
+				if($_SESSION['user_type']=='edit')
+					return true;	
+			}
+		}
+
+		return false;
+	}
 ?>

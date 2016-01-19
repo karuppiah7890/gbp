@@ -5,7 +5,7 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		$query = "SELECT `id` FROM login WHERE `email_id`='".mysqli_escape_string($conn,$username)."' AND `password`='".mysqli_escape_string($conn,$password)."'";
+		$query = "SELECT `id`,`user_type` FROM login WHERE `email_id`='".mysqli_escape_string($conn,$username)."' AND `password`='".mysqli_escape_string($conn,$password)."'";
 
 		if($query_run = mysqli_query($conn,$query)){
 
@@ -16,6 +16,7 @@
 				$row = mysqli_fetch_assoc($query_run);
 
 				$_SESSION['user_id'] = $row['id'];
+				$_SESSION['user_type'] = $row['user_type'];
 
 				header('Location: dashboard.php');
 			}
